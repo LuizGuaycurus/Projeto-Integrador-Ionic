@@ -1,5 +1,4 @@
 export class Ficha {
-    id: String;
     nome: String;
     nivel: number;
     vida: number;
