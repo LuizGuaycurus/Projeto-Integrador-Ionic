@@ -2,8 +2,16 @@ export class Ficha {
     id: String;
     nome: String;
     nivel: number;
+    vida: number;
     backgroung: String;
     raca: String;
-    alinhamento: String;
-    bproficiencia: number;
+    classe: String;
+    proficiencia: number;
+    forca: number;
+    destreza: number;
+    constituicao: number;
+    inteligencia: number;
+    sabedoria: number;
+    carisma: number;
+    classarmor: number;
 }
