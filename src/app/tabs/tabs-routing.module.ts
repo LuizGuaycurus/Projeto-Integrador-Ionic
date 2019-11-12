@@ -18,6 +18,24 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'addFicha',
+        children: [
+          {
+            path: '',
+            loadChildren: '../pages/add-ficha/add-ficha.module#AddFichaPageModule'
+          }
+        ]
+      },
+      {
+        path: 'addFicha/:key',
+        children: [
+          {
+            path: '',
+            loadChildren: '../pages/add-ficha/add-ficha.module#AddFichaPageModule'
+          }
+        ]
+      },
+      {
         path: 'tab2',
         children: [
           {

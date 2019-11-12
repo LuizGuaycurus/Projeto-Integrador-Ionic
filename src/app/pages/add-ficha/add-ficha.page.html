@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>add-ficha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #fc="ngForm" (ngSubmit)="onSubmit(fc)">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="ficha.nome" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nivel</ion-label>
+      <ion-input type="nivel" name="nivel" [(ngModel)]="ficha.nivel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Vida</ion-label>
+      <ion-input type="vida" name="vida" [(ngModel)]="ficha.vida"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Backgroud</ion-label>
+      <ion-input type="backgroung" name="backgroung" [(ngModel)]="ficha.backgroung"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Raça</ion-label>
+      <ion-input type="raca" name="raca" [(ngModel)]="ficha.raca"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Classe</ion-label>
+      <ion-input type="classe" name="classe" [(ngModel)]="ficha.classe"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Proficiencia</ion-label>
+      <ion-input type="proficiencia" name="proficiencia" [(ngModel)]="ficha.proficiencia"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Forca</ion-label>
+      <ion-input type="forca" name="forca" [(ngModel)]="ficha.forca"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Destrezal</ion-label>
+      <ion-input type="destreza" name="destreza" [(ngModel)]="ficha.destreza"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Constituição</ion-label>
+      <ion-input type="constituicao" name="constituicao" [(ngModel)]="ficha.constituicao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Inteligencia</ion-label>
+      <ion-input type="inteligencia" name="inteligencia" [(ngModel)]="ficha.inteligencia"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Sabedoria</ion-label>
+      <ion-input type="sabedoria" name="sabedoria" [(ngModel)]="ficha.sabedoria"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Carisma</ion-label>
+      <ion-input type="carisma" name="carisma" [(ngModel)]="ficha.carisma"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Classarmor</ion-label>
+      <ion-input type="classarmor" name="classarmor" [(ngModel)]="ficha.classarmor"></ion-input>
+    </ion-item>
+  </form>
+
+</ion-content>
