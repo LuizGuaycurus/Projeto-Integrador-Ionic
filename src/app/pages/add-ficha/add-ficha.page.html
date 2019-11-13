@@ -1,12 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>add-ficha</ion-title>
+    <ion-title>Adicionar Ficha</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <form #fc="ngForm" (ngSubmit)="onSubmit(fc)">
+    
+  <form #fc="ngForm" position="center" (ngSubmit)="onSubmit(fc)">
     <ion-item>
       <ion-label position="floating">Nome</ion-label>
       <ion-input type="text" name="nome" [(ngModel)]="ficha.nome" required></ion-input>
@@ -43,7 +44,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Forca</ion-label>
+      <ion-label position="floating">Força</ion-label>
       <ion-input type="forca" name="forca" [(ngModel)]="ficha.forca"></ion-input>
     </ion-item>
 
@@ -76,6 +77,13 @@
       <ion-label position="floating">Classarmor</ion-label>
       <ion-input type="classarmor" name="classarmor" [(ngModel)]="ficha.classarmor"></ion-input>
     </ion-item>
+
+    <ion-item lines="none">
+        <ion-button type="submit" shape="round" *ngIf="!key" [disabled]="fc.invalid">
+          <ion-icon name="save"></ion-icon>&nbsp;Salvar</ion-button>
+  
+        <ion-button shape="round" type="reset" routerLink="/">Cancelar</ion-button>
+      </ion-item>
   </form>
 
 </ion-content>

@@ -5,12 +5,12 @@ export class Ficha {
     backgroung: String;
     raca: String;
     classe: String;
-    proficiencia: number;
-    forca: number;
-    destreza: number;
-    constituicao: number;
-    inteligencia: number;
-    sabedoria: number;
-    carisma: number;
-    classarmor: number;
+    proficiencia: string;
+    forca: string;
+    destreza: string;
+    constituicao: string;
+    inteligencia: string;
+    sabedoria: string;
+    carisma: string;
+    classarmor: string;
 }

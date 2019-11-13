@@ -36,6 +36,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'listFicha',
+        children: [
+          {
+            path: '',
+            loadChildren: '../pages/list-ficha/list-ficha.module#ListFichaPageModule'
+          }
+        ]
+      },
+      {
         path: 'tab2',
         children: [
           {

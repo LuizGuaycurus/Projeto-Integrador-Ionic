@@ -31,4 +31,7 @@ save(ficha: Ficha) {
   update(ficha: Ficha, key: string) {
     return this.db.object("ficha/" + key).update(ficha);
   }
+  remove(key: string) {
+    return this.db.object("ficha/" + key).remove()
+  }
 }
